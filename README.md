@@ -19,6 +19,13 @@ no third-party dependencies. Run offline tests from the repository root:
 python3 -S -m unittest discover -s tests -v
 ```
 
+## Bounded smoke-test jobs
+
+S3 provides offline Slurm script generation, a bounded shared-runner interface,
+and per-GPU predicted-vs-measured reports. See the [example and integration guide](docs/smoke-test.md).
+The training harness and full setup generator adapters are still pending;
+current validation uses CPU mocks, not real GPU runs.
+
 ## License
 
 MIT
